@@ -1,0 +1,19 @@
+extends layout
+
+block page
+    #intro.intro
+        img#intro-img(src='/assets/black_button.png')
+        p#intro-text 
+            | thanks for comming 
+            br
+            | - Oh Han Jin
+
+    script.
+        document.getElementById('intro-img').addEventListener('click', (e) => {
+            $('#intro').fadeOut({
+                duration: 1000,
+                complete: () => {
+                    location.href = 'main';
+                }
+            })
+        });
