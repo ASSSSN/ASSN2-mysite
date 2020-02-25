@@ -11,6 +11,7 @@ const pageRouter = require('./routes/page');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
+app.set('projects', path.join(__dirname, 'public/assets/projects'));
 app.set('view engine', 'pug');
 app.set('port', process.env.PORT || 3000);
 

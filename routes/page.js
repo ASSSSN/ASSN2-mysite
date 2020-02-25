@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
 const router = express.Router();
 
@@ -7,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/main', (req, res) => {
-    res.render('main', { title: '만드는중'});
+    res.render('main', { title: 'ASSN2-mysite'});
 });
 
 
