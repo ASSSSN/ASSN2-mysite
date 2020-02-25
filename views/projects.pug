@@ -1,20 +1,6 @@
 .projects.fadeIn#projects
     h1 PROJECTS
     <br><br><br><br><br><br><br>
-    //- .slider-container
-    //-     .slider
-    //-         #img
-    //-             img(src='/assets/nodebird.png')
-    //-             | Express 기반의 NodeBird 메신저
-    //-         #img
-    //-             img(src='/assets/musicSNS.png')
-    //-             | 처음 만들어본 웹 musicSNS
-    //-         #img
-    //-             img(src='/assets/BABABA.png')
-    //-             | 자동 승하차 앱
-    //-         #img
-    //-             img(src='/assets/embedded.png')
-    //-             | Embedded 시스템
     .flex-parent
         .input-flex-container
             .input.active
@@ -28,31 +14,44 @@
         .description-flex-container
             p.active
                 img(src='/assets/musicSNS.png')
+                <br>
+                | JSP와 서블릿, Apache를 이용해 처음으로 만들어 본 웹 음악 SNS 서비스입니다.
+                <br>
+                | 서버와 웹에 다소 부족한 실력이었지만, 처음으로 만들어본 웹서버였습니다. MVC패턴에 대해 알게되고,
+                | 서버와 클라이언트에 대해 이해하고 관심을 갖게 되는 프로젝트였습니다.
                 <br><br>
-                |&nbsp;&nbsp;JSP와 서블릿, Apache를 이용해 처음으로 만들어 본 웹 음악 SNS 서비스입니다.
-            p 수정 중입니다.
-            p 수정 중입니다.
+                a(href='https://github.com/ASSSSN/WebServiceProject' target='_blank') 자세히
+
+            p
+                img(src='/assets/BABABA.png')
+                <br>
+                | 졸업 과제로 버스 자동 승하차 시스템을 구현함으로써, 승하차 시간을 줄이고, 하차 미태그 문제를 해결하려 
+                | 했던 프로젝트입니다.
+                <br>
+                | 초 전력 블루투스인 비콘과 핸드폰을 연결해 현재 위치를 파악하는 기술을 구현하려 했습니다.
+                <br><br>
+                a(href='https://github.com/ASSSSN/BABABA' target='_blank') 자세히
+
+            p
+                img(src='/assets/embedded.png')
+                <br>
+                | 임베디드 프로그래밍 목적으로 만들어진 기기 'hbe sm3 sv210'를 사용하여 드라이버 프로그래밍을 경험해보는
+                | 프로젝트였습니다.
+                <br><br>
+                a(href='https://github.com/ASSSSN/embedded' target='_blank') 자세히
+
             p
                 img(src='/assets/nodebird.png')
-                <br><br>
+                <br>
                 | 익스프레스 기반의 SNS 웹 앱 입니다.
-                br
+                <br>
                 | 'Node.js 교과서' 책의 내용중 하나로, 추가 구성 요소를 위해
                 | 기본 구성에서 UI 변경과 기능 추가와 그에 따른 백엔드 수정이 이루어졌습니다.
-                br
-                br
+                <br><br>
                 a(href='https://github.com/ASSSSN/nodebird' target='_blank') 자세히
 
 
 script.
-    //- $(document).ready(() => {
-    //-     $('.slider').bxSlider({
-    //-         mode: 'fade',
-    //-         captions: true,
-    //-         slideWidth: 500,
-    //-         //- slideHeight: 300,
-    //-     });
-    //- });
     $(function(){
         var inputs = $('.input');
         var paras = $('.description-flex-container').find('p');

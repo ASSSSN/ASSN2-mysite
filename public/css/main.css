@@ -244,7 +244,7 @@ margin-right: 50px;
 .projects img {
     margin: 0;
     margin-right: 30px;
-    height: 300px;
+    height: 250px;
     float: left;
     border-radius: 30px;
 }
@@ -368,4 +368,44 @@ margin-right: 50px;
     text-decoration: none;
     margin: 15px;
     color: crimson;
+}
+
+/* aboutpage.pug */
+.aboutpage {
+    width: 100vw;
+}
+
+.aboutpage #aboutpage-description {
+    padding: 0px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+}
+
+.aboutpage #aboutpage-description #text {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 800px;
+}
+
+.aboutpage #aboutpage-description #text a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+    color: crimson;
+}
+
+.aboutpage h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.aboutpage h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid red;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 50px;
 }
