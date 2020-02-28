@@ -12,6 +12,4 @@ router.get('/main', (req, res) => {
     res.render('main', { title: 'ASSN2-mysite'});
 });
 
-
-
 module.exports = router;

@@ -4,7 +4,8 @@
   "description": "web site for assn2's portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "cross-env NODE_ENV=production PORT=3000 pm2 start app.js -i 1",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,16 @@
     "animate.css": "^3.7.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
+    "cross-env": "^7.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
+    "helmet": "^3.21.3",
+    "hpp": "^0.2.3",
     "morgan": "^1.9.1",
-    "pug": "^2.0.4"
+    "nodemailer": "^6.4.3",
+    "pm2": "^4.2.3",
+    "pug": "^2.0.4",
+    "winston": "^3.2.1"
   }
 }

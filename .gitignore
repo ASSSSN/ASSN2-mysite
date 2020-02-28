@@ -6,7 +6,6 @@ uploads/
 dist/
 npm-debug.log
 yarn-error.log
-public/assets/
 # Editor directories and files
 .idea
 *.suo
