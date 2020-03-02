@@ -39,6 +39,7 @@ html,body {
 .intro #intro-img {
     cursor: pointer;
     max-width: 120px;
+    margin: 30px;
 }
 .intro #intro-img:hover {
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
