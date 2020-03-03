@@ -2,4 +2,3 @@
 node_modules/
 logs/logs/*.log
 package-lock.json
-logs/logs/.gitkeep
