@@ -16,7 +16,7 @@ html
             form(action='/mail' method='post')
                 .input-group
                     label(for='email-email') 이메일
-                    input#email-email(type='text' name='email')
+                    input#email-email(type='email' name='email' required autofocus)
                 .input-group
                     label#quest(for='email-quest') 내용
                     textarea#email-quest(name='quest' cols="50" rows="8")
