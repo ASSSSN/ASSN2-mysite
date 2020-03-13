@@ -1,15 +1,22 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const urls = require('../urls');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('intro', { title: 'Welcome!!'});
+router.get(urls.home, (req, res) => {
+    res.render('intro', {
+        title: 'Welcome!!',
+        urls,
+    });
 });
 
-router.get('/main', (req, res) => {
-    res.render('main', { title: 'ASSN2-mysite'});
+router.get(urls.main, (req, res) => {
+    res.render('main', {
+        title: 'ASSN2-mysite',
+        urls,
+    });
 });
 
 module.exports = router;

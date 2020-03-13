@@ -376,6 +376,11 @@ margin-right: 50px;
     width: 100vw;
 }
 
+.aboutpage img {
+    width: 40px;
+    height: 40px;
+}
+
 .aboutpage #aboutpage-description {
     padding: 0px;
     margin: 0 auto;

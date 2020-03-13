@@ -13,7 +13,7 @@ html
             //- .input-group
             //-     label(for='email-name') 이름
             //-     input#email-name(type='text', name='email-name')
-            form(action='/mail' method='post')
+            form(action=urls.postmail method='post')
                 .input-group
                     label(for='email-email') 이메일
                     input#email-email(type='email' name='email' required autofocus)

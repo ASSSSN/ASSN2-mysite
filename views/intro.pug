@@ -2,7 +2,8 @@ extends layout
 
 block page
     #intro.intro
-        img#intro-img(src='/assets/black_button.png')
+        input#url(type='hidden', value=urls.main)
+        img#intro-img(src=urls.assets + '/black_button.png')
         p#intro-text 
             | thanks for comming 
             br
@@ -10,10 +11,11 @@ block page
 
     script.
         document.getElementById('intro-img').addEventListener('click', (e) => {
+            const url = document.querySelector('#url').value;
             $('#intro').fadeOut({
                 duration: 1000,
                 complete: () => {
-                    location.href = 'main';
+                    location.href = url;
                 }
             })
         });
