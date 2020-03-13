@@ -10,6 +10,7 @@ const hpp = require('hpp');
 const fs = require('fs');
 require('dotenv').config();
 
+const urls = require('./urls');
 const pageRouter = require('./routes/page');
 const mailRouter = require('./routes/mail');
 
@@ -49,8 +50,8 @@ app.use(session({
 }));
 app.use(flash());
 
-app.use('/mail', mailRouter);
-app.use('/', pageRouter);
+app.use(urls.mail, mailRouter);
+app.use(urls.home, pageRouter);
 
 /*
 * 위의 미들웨어들에서 아무런 응답도 찾지 못했다면
