@@ -1,6 +1,6 @@
 {
   "name": "assn2-mysite",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "web site for assn2's portfolio",
   "main": "app.js",
   "scripts": {
@@ -32,5 +32,8 @@
     "pm2": "^4.2.3",
     "pug": "^2.0.4",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
