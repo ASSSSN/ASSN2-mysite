@@ -4,7 +4,7 @@
   "description": "web site for assn2's portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production PORT=3000 pm2 start app.js -i 1 --name 'ASSN2-mysite'",
+    "start": "cross-env NODE_ENV=production PORT=3000 pm2 start app.js --name 'ASSN2-mysite'",
     "dev": "nodemon app"
   },
   "repository": {
